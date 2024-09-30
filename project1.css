@@ -9,6 +9,7 @@
 
 .navlogo {
   size: 400px;
+  max-width: 100%;
 }
 
 ul {
@@ -46,6 +47,8 @@ li a:hover {
   scroll-margin-top: 156px;
   font-size: 28px;
   padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 /*Section 2 styles*/
@@ -56,9 +59,17 @@ li a:hover {
   scroll-margin-top: 156px;
   font-size: 28px;
   padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 /*Section 3 styles*/
+.sec3 {
+  background-color: rgb(245, 240, 230);
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+}
 .sec3-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -71,4 +82,35 @@ li a:hover {
   max-height: 500px;
   overflow: scroll;
   text-align: center;
+}
+
+.sec1img,
+.sec2img {
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  ul {
+    display: none;
+  }
+  .navlogo {
+    max-width: 75%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .paragraph,
+  .grid-box {
+    font-size: 20px;
+  }
+
+  .sec3-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sec1 {
+    margin-top: 0px;
+  }
 }
